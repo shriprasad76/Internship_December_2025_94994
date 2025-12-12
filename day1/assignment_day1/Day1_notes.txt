@@ -1,0 +1,31 @@
+SUNBEAM ONLINE STUDENT PORTAL
+1.INTRO:-
+We have to create a web application using ,
+1)database:- MySQL,
+2)Backend :- python flask,
+3)frontend:- react(vite),
+4)language  :- javascript.
+
+2.In sunbeam online cource portal the multiple cources are there.These cources are available only in online mode.
+
+3.In sunbeam online cource portal, there are two moduls:-1)admin
+                                                         2)students
+
+4.In admin module only 1 admin is there with defaults credientials. 
+
+5.In student module, multiple students are there.
+
+6.For registeration of student, student must enter name email and mobail number and with default course, he/she 
+  will be register.
+
+7.For student registration default password must be set.
+
+##Admin Module:
+
+1.Admin may use default credientials having fix username and password.
+2.Admin may design the course and add the multiple videos to that course.
+
+
+points:-
+1. .git ignore(read about .git ignore and git colabrators)
+2. 
