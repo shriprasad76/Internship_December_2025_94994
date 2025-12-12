@@ -1,0 +1,43 @@
+Database_Creation
+create database sunbeam_project;
+use sunbeam_project;
+
+CREATE TABLE users (
+    email VARCHAR(100) PRIMARY KEY,
+    password VARCHAR(255) NOT NULL DEFAULT 'sunbeam',
+    role ENUM('admin', 'student') NOT NULL
+);
+
+
+CREATE TABLE courses (
+    course_id INT PRIMARY KEY AUTO_INCREMENT,
+    course_name VARCHAR(100) NOT NULL,
+    description VARCHAR(255),
+    fees INT NOT NULL,
+    start_date DATE,
+    end_date DATE,
+    video_expire_days INT
+);
+
+
+CREATE TABLE student (
+    reg_no INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    course_id INT,
+    mobile_no BIGINT,
+    profile_pic BLOB,
+    FOREIGN KEY (email) REFERENCES users(email),
+    FOREIGN KEY (course_id) REFERENCES courses(course_id)
+);
+
+
+CREATE TABLE videos (
+    video_id INT PRIMARY KEY AUTO_INCREMENT,
+    course_id INT NOT NULL,
+    title VARCHAR(100) NOT NULL,
+    description VARCHAR(200),
+    youtube_url VARCHAR(200),
+    added_at DATE,
+    FOREIGN KEY (course_id) REFERENCES courses(course_id)
+);
