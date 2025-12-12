@@ -1,0 +1,36 @@
+commands for git
+
+1. to verify the git version    : git --version
+2. cloning the data             : git clone remote_url
+3. traversing to another folder : cd folder_name
+4. to come previous folder      : cd ..
+5. for auto complete            : tab
+
+# Branching Workflow:-
+1. create a new branch:-
+               git checkout -b Branch_hname (create and switches the branch)
+
+2. Listing all branches:
+               git branch
+
+3. To switch one branch to another branch: 
+               git checkout branch_name
+
+
+# Make changes :-
+
+flow:- Add->commit->push
+
+1. To check the status of the branch:-
+               git status
+
+2. To add the file in stagging area;- 
+               1)for specific file: git add file_name
+               2)for all changes:   git add .
+
+3. commitng the changes:- 
+              git commit -m "message"
+
+4.push changes to GitHub:-
+              1)git push origin branch_name
+              2)git push (push changes only into the current branch)
