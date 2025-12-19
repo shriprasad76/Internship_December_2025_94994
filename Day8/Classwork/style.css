@@ -1,0 +1,17 @@
+#title {
+    color: aqua;
+}
+
+#msg {
+    color: blue;
+    font-size: 20px;
+}
+
+.button {
+    color: darkgreen;
+    cursor: pointer;
+    background-color: lightgray;
+    border: 1px solid darkgreen;
+    padding: 5px 10px;
+    margin: 2px;
+}
